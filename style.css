@@ -7,7 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Patrick Hand', cursive;
-
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -84,6 +84,7 @@ p{
 #header .header{
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
 }
 #header .nav-bar{
     display: flex;
@@ -139,19 +140,32 @@ p{
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
 }
+#header .nav-list ul li:hover a{
+    color: crimson;
+}
 #header .hamburger{
-    height: 40px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     display: inline-block;
-    border: 2px solid white;
+    border: 3px solid white;
+    border-radius: 50%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 100;
     cursor: pointer;
-    transform: scale(.8);
+    transform: scale(.7);
     margin-right: 20px;
+}
+#header .hamburger::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: hamburger_pulse 1.5s ease infinite;
 }
 #header .hamburger::after{
     position: absolute;
@@ -162,7 +176,7 @@ p{
     border: 3px solid white;
 }
 #header .hamburger .bar{
-    height: 1px;
+    height: 2px;
     width: 30px;
     position: relative;
     background-color: white;
@@ -272,7 +286,10 @@ p{
     padding: 100px 0;
 
 }
-
+#services .service-top{
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 #services .service-bottom{
     display: flex;
@@ -546,6 +563,17 @@ p{
 
 /* end of footer */
 /*Key frames*/ 
+
+@keyframes hamburger_pulse{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
 @keyframes text_reveal_box {
     50%{
         width: 100%;
@@ -657,12 +685,14 @@ p{
     #contact .contact-items{
         width: 100%;
         display: flex;
-        flex-direction: row;
-        padding: 20px;
+        flex-direction: row; 
+        justify-content: space-evenly;
         margin: 0;
+        /* padding: 30px; */
     }
     #contact .contact-item{
-        margin: 20px; 
+        width: 30%;
+        margin: 0;
         flex-direction: row;
     }
     #contact .contact-item .icon{
@@ -679,14 +709,36 @@ p{
     }
     /* end contact */
 }
-/* media query for tablet */
+/* end of media query for tablet */
 
-/*  Media query  for desktop*/
+ /* Media query  for desktop */
 @media only screen and (min-width: 1200px) {
+    /* header */
+    #header .hamburger{
+        display: none ;
+    }
+    #header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul li{
+        display: inline-block;
+    }
+    #header .nav-list ul li a{
+        font-size: 1.8rem;
+    }
+    #header .nav-list ul a::after{
+        display: none;
+    }
+    /* end header */
     #services .service-bottom .service-item{
         flex-basis: 22%;
         margin: 1.5%;
     }
     
 }
+/* end of Media query  for desktop */
 /* end of MQ */
