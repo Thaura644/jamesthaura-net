@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<body>
-	<!-- ad -->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2833484435667121"
-     crossorigin="anonymous"></script>
-	<!-- end   ad-->
+<body onload="myFunction()" style="margin:0;" >
+	<div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
     <!-- header -->
-     <div class="inline">
-        <div  class="center">
+     
     <section id="header">
         <div class="header container">
             <div class="nav-bar">
@@ -53,7 +50,7 @@
         <div class="services container">
             <div class="service-top">
                 <h1 class="section-title">Serv<span>i</span>ces</h1>
-                     <p>I am a full stack Developer and currently a student taking Computer Science in Kenya at Kabarak university. 
+                     <p>I am a Developer and currently a student taking Computer Science in Kenya at Kabarak university. 
                          I love programming and matters concerning tech. So I am exhilarated to start working with you guys out here. 
                          Be it Web designs and development, or android and iOS development, hit me up, i'll provide solutions. 
                          When it comes to Artificial intelligence; Machine learning and data science, I am still learning those. 
@@ -66,7 +63,7 @@
                 <h2>Web Design</h2>
                 <p>Technology is very dependent on its subdivisions, Web technology are needed as are other technologies needed here too.
                     I do Website development, as it is mostly a programmers prerequisites :). 
-                    And this is my first public project, where I used html, css and a bit of javascript; as you can see this web page is responsive.
+                    And this is my first public project, where I used html, css and a bit of javascript.
                 </p>
                     </div>
                 
@@ -74,7 +71,7 @@
                         <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/anonymous-mask.png"/></div>
                    
                 <h2>Android and iOS </h2>
-                <p>I am also good at Android development using java and currently learning mainstream language; javascript and react native fro building cross-platform applications.
+                <p>I am also novice at Android development using java/kotlin and currently learning mainstream language.
                     More projects are coming soon   </p>
                 </div>
                     
@@ -99,7 +96,7 @@
                 <h1 class="section-title">Recent <span>Projects</span></h1>
             </div>
             <div class="all-projects">
-                <div class="project-item">
+                <!-- <div class="project-item">
                     <div class="project-info">
                         <h1>Ground breaker</h1>
                         <h2>Coding is love</h2>
@@ -114,37 +111,50 @@
                     <div class="project-img">
                         <img src="./img/94132_satellite5.jpg" alt="img">
                     </div>
-                </div>
+                </div> -->
 
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Project 1</h1>
                         <h2><a href="https://github.com/Thaura644/Mates_Search">Matesearch</a> </h2>
-                       <p> <a href="https://github.com/Thaura644/Mates_Search" style="color: maroon;">Matesearch </a>is an online dating web-app. Developed by a team of five, i led the project development team to accomplish this.
+                       <p> <a href="https://github.com/Thaura644/Mates_Search" target="_blank" style="color: maroon;">Matesearch </a>is an online dating web-app. Developed by a team of five, i led the project development team to accomplish this.
                             Built on django as its backend and css and javascript as its frontend. The hyperlink takes you to the codebase
                         </p>
 
                     </div>
                     <div class="project-img">
-              ~          <img src="./img/94132_satellite5.jpg" alt="img">
+              ~          <img src="./img/dating.jpg" alt="img">
                     </div>
                 </div>
 
                 <div class="project-item">
                     <div class="project-info">
                         <h1>Project 2</h1>
-                    <a href="https://github.com/Thaura644/studybud>StudyBud" style="color: maroon;"> StudyBud </a></h2>
+                    <a href="https://github.com/Thaura644/studybud>StudyBud"  target="_blank"style="color: maroon;"> StudyBud </a></h2>
                         <p>I use this project to further my skills in python django web dev. It is a kind of a learning management system but also integrated in it a social corner for students who would have to mingle and interact.
-                            Also in cases of social anxiety learner would have the ability to shutdown the noise.<a href="https://github.com/Thaura644/studybud" style="color: white;" >StudyBud</a> still in development
+                            Also in cases of social anxiety learner would have the ability to shutdown the noise.<a href="https://github.com/Thaura644/studybud" target="_blank" style="color: white;" >StudyBud</a> still in development
                         </p>
 
                     </div>
                     <div class="project-img">
-                        <img src="./img/94132_satellite5.jpg" alt="img">
+                        <img src="./img/studybud.jpg" alt="img">
                     </div>
                 </div>
 
                 <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                    <a href="https://github.com/Thaura644/studybud>StudyBud" target="_blank" style="color: maroon;"> Homey App </a></h2>
+                        <p>This is a property management system that i am part of the the development team. A team project in in our curriculum, being built using the mern stack technologies; that is react front end , nodejs backend and express serving with mongodb as backend. Here is a link to github project, <a href="https://github.com/Homey-property-management/homey-app" style="color: white;" >Homey App</a> is still in development
+                       #this project is still private </p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/homey.png" alt="img">
+                    </div>
+                </div>
+
+                <!-- <div class="project-item">
                     <div class="project-info">
                         <h1>Project 3</h1>
                         <h2>Muchkin</h2>
@@ -154,8 +164,8 @@
                     <div class="project-img">
                         <img src="./img/94132_satellite5.jpg" alt="img">
                     </div>
-                </div>
-                <div class="project-item">
+                </div> -->
+                <!-- <div class="project-item">
                     <div class="project-info">
                         <h1>Project 4</h1>
                         <h2>Copy-Kat</h2>
@@ -165,7 +175,7 @@
                     <div class="project-img">
                         <img src="./img/94132_satellite5.jpg" alt="img">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -178,20 +188,20 @@
         <div class="about container">
             <div class="col-left">
                 <div class="about-img">
-                    <img src="./img/WAL_6776.jpg" alt="img">
+                    <img src="./img/SAM-19.JPG" alt="img">
 
                 </div>
             </div>
             <div class="col-right">
                 <h1 class="section-title">About <span>me</span></h1>
                 <h2>Full Stack Developer</h2>
-                <p>I am a full stack Developer and currently a student taking Computer Science in Kenya at Kabarak university. 
+                <p>I am a Developer and currently a student taking Computer Science in Kenya at Kabarak university. 
                     I love programming and matters concerning tech. So I am exhilarated to start working with you guys out here. 
                     Be it Web designs and development, or android and iOS development, hit me up, i'll provide solutions. 
                     When it comes to Artificial intelligence; Machine learning and data science, I am still learning those. 
                     Pretty soon, i will drop projects and my deployments. Thank you.</p>
 
-                    <a href="a" type="button" class="cta">Download Resume</a>
+                    <a href="a" type="button" target="_blank" class="cta">Download Resume</a>
             </div>
         </div>  
     </section>
@@ -216,20 +226,18 @@
                 <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/gmail-new.png"/></div>
                 <div class="contact-info">
                     <h1>Email</h1>
-                    <h2><a href="https://jamesthaura51@gmail.com">jamesthaura51@gmail.com</a></h2>
-                    <h2><a href="https://jmweni@kabarak.ac.ke"> jmweni@kabarak.ac.ke</a></h2>
+                    <h2><a href="https://jamesthaura51@gmail.com" target="_blank" >jamesmweni52@gmail.com</a></h2>
+                    <h2><a href="https://jmweni@kabarak.ac.ke" target="_blank" > jmweni@kabarak.ac.ke</a></h2>
                     
                 </div>
             </div>
-            <div class="contact-item">
+            <!-- <div class="contact-item">
                 <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/email--v2.png"/></div>
                 <div class="contact-info">
-                    <h1>Address</h1>
-                    <h2>P.O.BOX 34-80206 Gongoni</h2>
-                    <h2>P.O.Private Bag 20157</h2>
+                  
                     
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -241,25 +249,24 @@
         <h2>Your best possible solution</h2>
         <div class="social-icon">
             <div class="social-item"><!--github -->
-                <a href="https://www.github.com/thaura644"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
+                <a href="https://www.github.com/thaura644" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
             </div>
             <div class="social-item"><!--linked in-->
-                <a href="https://www.linkedin.com/in/james-mweni-b963a821a/?lipi=urn%3Ali%3Apage%3Aprofile_common_profile_index%3Be132650d-2beb-4ac3-971c-ceb573a1dc10"><img src="https://img.icons8.com/fluency/50/000000/linkedin.png"/></a>
+                <a href="https://www.linkedin.com/in/jamesthaura" target="_blank" ><img src="https://img.icons8.com/fluency/50/000000/linkedin.png"/></a>
             </div>
             <div class="social-item"><!--insta-->
-                <a href="a"><img src="https://img.icons8.com/fluency/50/000000/instagram-new.png"/></a>
+                <a href="https://www.instagram.com/this.thaura/"   target="_blank"><img src="https://img.icons8.com/fluency/50/000000/instagram-new.png"/></a>
             </div>
             <div class="social-item"><!--twitter-->
-                <a href="https://www.twitter.com/1commas"><img src="https://img.icons8.com/fluency/50/000000/twitter.png"/></a>
+                <a href="https://twitter.com/thisthaura"    target="_blank" ><img src="https://img.icons8.com/fluency/50/000000/twitter.png"/></a>
             </div>
         </div>
          <p> Copyright © 2022 Thaura, All rights reserved </p>
     </div>
 </section>
 
-        </div>  
-           <p class="spinner" id="spinner"><i class="fa fa-spinner fa-5x"></i></p>
-    </div>
+</div>
+
 
 <!-- enf of footer -->
 <script src="./app.js"></script>
