@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Patrick+Hand&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Patrick+Hand&display=swap"); */
 
 #loader {
   position: absolute;
@@ -79,7 +79,8 @@
 }
 html {
   font-size: 10px;
-  font-family: "Patrick Hand", cursive;
+  /* "Patrick Hand" */
+  font-family: cursive;
   scroll-behavior: smooth;
 }
 a {
@@ -281,6 +282,7 @@ p {
 /* end of header section */
 /*Hello section*/
 #Hello {
+  background-image: url(./img/me.jpg);
   background-image: url(./img/SAM-20.JPG);
   background-size: contain;
   background-position: top center;
@@ -304,8 +306,15 @@ p {
   padding: 0 50px;
   justify-content: flex-start;
 }
+#Hello .hello-img{
+  background-size: contain;
+  opacity: 0.8;
+  justify-self: flex-start;
+  z-index: -1;
+}
 
 #Hello h1 {
+ 
   display: block;
   width: fit-content;
   font-size: 4rem;
