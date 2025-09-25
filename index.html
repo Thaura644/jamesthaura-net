@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body onload="myFunction()" style="margin:0;" >
+	<div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <!-- header -->
+     
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#Hello"><h1><span>J</span>ames <span>T</span>haura</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="#Hello" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Services">Services</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of header -->
+    <!-- Hello section -->
+    <section id="Hello">
+        <div class="hello container">
+            
+            <div>
+                <h1>Hello,<span></span></h1>
+                <h1>My name is <span></span></h1>
+                <h1>James Thaura <span></span></h1>
+                <a href="#projects" type="button" class="cta">Portfolio</a>
+            </div>
+            <div class="hello-img">
+                <img src="./img/me.jpg" alt="img">
+            </div>
+        </div>
+    </section>
+    <!-- end of Hello section -->
+
+    <!-- service section -->
+    <section id = "services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Serv<span>i</span>ces</h1>
+                     <p>I am a Developer with Computer Science degree background from Kenya at Kabarak university. 
+                         I love programming and matters concerning tech.Be it Web designs and development, or android development, i do provide solutions
+                        </p>
+            </div>
+            <div class="service-bottom">
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/anonymous-mask.png"/></div>
+               
+                <h2>Web Development</h2>
+                <p>Technology is very dependent on its subdivisions, Web technology are needed as are other technologies needed here too.
+                    I do Website development, as it is mostly a programmers prerequisites :). 
+                    And this is my first public project, where I used html, css and a bit of javascript.
+                </p>
+                    </div>
+                
+                <div class="service-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/anonymous-mask.png"/></div>
+                   
+                <h2>Android</h2>
+                <p>I am proficient in react native for mobile dev. I am also novice at Android development using java/kotlin and currently learning mainstream language.
+                    More projects are coming soon </p>
+                </div>
+                    
+
+                <div class="service-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/anonymous-mask.png"/></div>
+                       
+                <h2>Data Science ,AI, ML</h2>
+                <p>I have a passion for AI, machine learning and datascience in general.I do tasks(Web and mobile apps and AI) is series as part of a larger program(computer science) 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of  service section -->
+
+    <!-- Projects section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <!-- <div class="project-item">
+                    <div class="project-info">
+                        <h1>Ground breaker</h1>
+                        <h2>Coding is love</h2>
+                        <p>I intend this project to be a blog and platform for coding insights and a blended community. 
+                            This product will not try to compete or copy stackOverflow because it is different.
+                             It potrays the beauty of programming, other successfull programmers' testimonies, learning outcomes which will be a guide and many more that you would wish it to be.
+                              It shall be. Have any  ideas hit me up.
+                              In development <a href="https://jamesthaura51@gmail.com">Email</a>
+                        </p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/94132_satellite5.jpg" alt="img">
+                    </div>
+                </div> -->
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 1</h1>
+                        <h2><a href="https://nasa-apod-app-six.vercel.app/">Nasa-apod-app</a> </h2>
+                       <p> <a href="https://nasa-apod-app-six.vercel.app/" target="_blank" style="color: maroon;">NASA Astronomy Picture of the Day App </a>
+This web application allows users to explore NASA's Astronomy Picture of the Day (APOD). Users can view the latest picture, search for pictures by date, and browse through a gallery of past images.
+<a href="https://github.com/Thaura644/nasa-apod-app">Code Base</a>
+                        </p>
+
+                    </div>
+                    <div class="project-img">
+              ~          <img src="./img/apod.png" alt="img">
+                    </div>
+                </div>
+
+                  <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 2</h1>
+                    <a href="https://github.com/Thaura644/kenya_school_bus_app"  target="_blank"style="color: maroon;"> KSBA - Kenya School Bus App </a></h2>
+                        <p>An efficient school bus management system with real-time tracking of buses, route optimization, and attendance management.<a href="https://github.com/Thaura644/kenya_school_bus_app" target="_blank" style="color: white;" >kenya_school_bus_app's codebase</a> 
+                        </p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/ksba.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                    <a href="https://github.com/Thaura644/studybud>StudyBud"  target="_blank"style="color: maroon;"> StudyBud </a></h2>
+                        <p>I use this project to further my skills in python django web dev. It is a kind of a learning management system but also integrated in it a social corner for students who would have to mingle and interact.
+                            Also in cases of social anxiety learner would have the ability to shutdown the noise.<a href="https://github.com/Thaura644/studybud" target="_blank" style="color: white;" >StudyBud</a> still in development
+                        </p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/studybud.jpg" alt="img">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                    <a href="https://github.com/orgs/Homey-property-management/projects/1" target="_blank" style="color: maroon;"> Homey App </a></h2>
+                        <p>This is a property management system that i am part of the the development team. A team project in in our curriculum, being built using the mern stack technologies; that is react front end , nodejs backend and express serving with mongodb as backend. Here is a link to github project
+                             <a href="https://github.com/Homey-property-management/homey-app" style="color: white;" >Homey App</a> is still in development
+                        </p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/homey.png" alt="img">
+                    </div>
+                </div>
+                <!-- <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                    <a href="https://github.com/Thaura644/beginner-android-a" target="_blank" style="color: maroon;"> MedHi</a></h2>
+                        <p> MedHi is an android application built on kotlin. The mobile app is panned to uses reminders, educational resources, and personalized messaging to encourage patients to take their medications as prescribed. The app being developed to track medication adherence, provide tips for managing side effects, and connect patients with healthcare providers if they have questions or concerns. The app should in due time, also provide feedback to healthcare providers on patient adherence and identify potential areas for intervention. This can improve patient outcomes, reduce healthcare costs associated with medication non-adherence, and help patients better manage their health conditions.<a href="https://github.com/Thaura644/beginner-android-a" style="color: white;" >MedHi</a> is still in development</p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/medhi.jpg" alt="img">
+                    </div>
+                </div> -->
+
+                <!-- <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                        <h2>Muchkin</h2>
+                        <p>Coming Soon!!</p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/94132_satellite5.jpg" alt="img">
+                    </div>
+                </div> -->
+                <!-- <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                        <h2>Copy-Kat</h2>
+                        <p>Coming soon!!</p>
+
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/94132_satellite5.jpg" alt="img">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- end of project section -->
+
+
+
+<!-- about section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="./img/SAM-19.JPG" alt="img">
+
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>me</span></h1>
+                <h2>Full Stack Developer</h2>
+                <p>I am a Developer having Computer Science degree background in Kenya at Kabarak university. 
+                    I love programming and matters concerning tech. So I am exhilarated to start working with you guys out here. 
+                    Be it Web designs and development, or android and iOS development, hit me up, i'll provide solutions. 
+                    When it comes to Artificial intelligence; Machine learning and data science, I am still learning those. 
+                    Pretty soon, i will drop projects and my deployments. Thank you.</p>
+
+                    <a href="https://drive.google.com/file/d/1_NNgYyjXfui4HROE8U9Nnvlg77j1FfWX/view?usp=sharing" type="button" target="_blank" class="cta">Download Resume</a>
+            </div>
+        </div>  
+    </section>
+    
+<!-- end of about section -->
+
+<!-- contact info section -->
+<section id="contact">
+    <div class="contact container">
+        <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"> <img src="https://img.icons8.com/fluency/48/000000/phone.png"/></div>
+                <div class="contact-info">
+                    <h1>Phone</h1>
+                    <h2>+254111403346</h2>
+
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/gmail-new.png"/></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2><a href="https://jamesmweni52@gmail.com" target="_blank" >jamesmweni52@gmail.com</a></h2>
+                    <h2><a href="https://jmweni@kabarak.ac.ke" target="_blank" > jmweni@kabarak.ac.ke</a></h2>
+                    
+                </div>
+            </div>
+            <!-- <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/email--v2.png"/></div>
+                <div class="contact-info">
+                  
+                    
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!-- end of contact section -->
+<!-- footer  -->
+<section id="footer">
+    <div class="footer container">
+        <div class="brand"><h1><span>J</span>ames <span>T</span>haura</h1></div>
+        <h2>Your best possible solution</h2>
+        <div class="social-icon">
+            <div class="social-item"><!--github -->
+                <a href="https://www.github.com/thaura644" target="_blank"><img src="https://img.icons8.com/bubbles/50/000000/github.png"/></a>
+            </div>
+            <div class="social-item"><!--linked in-->
+                <a href="https://www.linkedin.com/in/jamesthaura" target="_blank" ><img src="https://img.icons8.com/fluency/50/000000/linkedin.png"/></a>
+            </div>
+            <div class="social-item"><!--insta-->
+                <a href="https://www.instagram.com/this.thaura/"   target="_blank"><img src="https://img.icons8.com/fluency/50/000000/instagram-new.png"/></a>
+            </div>
+            <div class="social-item"><!--twitter-->
+                <a href="https://twitter.com/thisthaura"    target="_blank" ><img src="https://img.icons8.com/fluency/50/000000/twitter.png"/></a>
+            </div>
+        </div>
+         <p> Copyright © 2022 Thaura, All rights reserved </p>
+    </div>
+</section>
+
+</div>
+
+
+<!-- enf of footer -->
+<script src="./app.js"></script>
+</body>
+</html>
