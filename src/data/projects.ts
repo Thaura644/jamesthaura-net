@@ -45,7 +45,7 @@ export const projects: Project[] = [
     • **For Government**: Real-time citizen feedback, data-driven policy insights, improved public communication, digital-first governance tools
     • **For Organizations**: Comprehensive analytics, multi-tenant architecture, white-label solutions, scalable infrastructure
 
-    🌍 **Impact**: Designed for African governance contexts while maintaining global scalability. Features include multi-language support, offline functionality, M-Pesa integration, and AI-powered insights that help governments make better decisions based on citizen sentiment.`,
+    🌍 **Impact**: Designed for African governance contexts while maintaining global scalability. Features include multi-language support, offline functionality, and AI-powered insights that help governments make better decisions based on citizen sentiment.`,
     image: '/projects/barazer-hero.png',
     gallery: [
       '/projects/barazer-mobile.png',
@@ -179,10 +179,10 @@ export const projects: Project[] = [
     id: 'budgetwise-app',
     title: 'BudgetWise',
     subtitle: 'Comprehensive Financial Management App',
-    description: 'Flutter-based financial management application designed for the Kenyan market with M-Pesa integration, budget tracking, and financial insights.',
-    longDescription: `🎯 **The Problem**: Millions of Kenyans struggle with personal financial management. Traditional banking apps are complex, don't integrate with M-Pesa (primary payment method), and lack budgeting features tailored to local financial behaviors.
+    description: 'Flutter-based financial management application designed for the Kenyan market with bank and M-Pesa integration, budget tracking, and financial insights.',
+    longDescription: `🎯 **The Problem**: Millions of Kenyans struggle with personal financial management. Traditional banking apps are complex, don't integrate with M-Pesa (primary payment method) with no budgeting features tailored to local financial behaviors.
 
-    💡 **The Solution**: BudgetWise brings comprehensive financial management to everyone's smartphone. Track multiple accounts, create smart budgets, set financial goals, and get insights—all with seamless M-Pesa integration that automatically imports your transactions.
+    💡 **The Solution**: BudgetWise brings comprehensive financial management to everyone's smartphone. Track multiple accounts, create smart budgets, set financial goals, and get insights—all with seamless M-Pesa integration that automatically imports your transactions. We are not replacing banks, neither do we handle your money. We got you you with stats.
 
     🚀 **Value Created**:
     • **For Individuals**: Better financial decisions through clear spending insights, automated M-Pesa transaction tracking, goal achievement through visual progress tracking
