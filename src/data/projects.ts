@@ -190,7 +190,7 @@ export const projects: Project[] = [
     • **For Small Businesses**: Simple expense tracking, cash flow management, integration with mobile money systems
 
     📱 **Technical Excellence**: Built with Flutter for cross-platform consistency, follows clean architecture principles, works offline (crucial for Kenya's connectivity), and uses advanced data visualization for financial insights. The app is optimized for low-end devices while maintaining premium user experience.`,
-    image: '/projects/budgetwise-hero.png',
+    image: '/projects/budgetwise-hero.jpeg',
     gallery: [
       '/projects/budgetwise-dashboard.png',
       '/projects/budgetwise-budgets.png',
