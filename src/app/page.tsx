@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Download, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { personalInfo, bio } from '@/data/content'
@@ -80,10 +81,14 @@ export default function Home() {
             >
               <div className="relative">
                 <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary to-blue-600 opacity-20 absolute inset-0 blur-3xl" />
-                <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary/10 to-blue-600/10 border border-border/50 flex items-center justify-center">
-                  <div className="text-6xl lg:text-8xl font-bold text-muted-foreground/20">
-                    {personalInfo.name.split(' ').map(n => n[0]).join('')}
-                  </div>
+                <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-border/50 bg-card">
+                  <Image
+                    src="/me-hero.jpeg"
+                    alt={`${personalInfo.name} - Profile Picture`}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
               </div>
             </motion.div>
@@ -120,10 +125,13 @@ export default function Home() {
               >
                 <Link href={`/projects/${project.id}`} className="block">
                   <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <div className="h-48 bg-gradient-to-br from-primary/10 to-blue-600/10 flex items-center justify-center">
-                      <div className="text-2xl font-bold text-muted-foreground/40">
-                        {project.title.split(' ').map(w => w[0]).join('')}
-                      </div>
+                    <div className="h-48 relative bg-muted">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
                     </div>
                     <div className="p-6 space-y-3">
                       <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">

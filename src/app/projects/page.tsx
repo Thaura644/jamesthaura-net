@@ -7,6 +7,7 @@ import { projects } from '@/data/projects'
 import { projectCategories } from '@/data/navigation'
 import { PaymentBlock } from '@/components/ui/payment-block'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
@@ -115,11 +116,14 @@ export default function Projects() {
                 viewport={{ once: true }}
                 className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-primary/50"
               >
-                {/* Project Image/Placeholder */}
-                <div className="h-48 bg-gradient-to-br from-primary/10 to-blue-600/10 flex items-center justify-center relative">
-                  <div className="text-3xl font-bold text-muted-foreground/40">
-                    {project.title.split(' ').map(w => w[0]).join('')}
-                  </div>
+                {/* Project Image */}
+                <div className="h-48 relative bg-muted">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
                   
                   {/* Status Badge */}
                   <div className="absolute top-4 right-4">
@@ -219,10 +223,13 @@ export default function Projects() {
                     </div>
                     
                     {/* View Details Button */}
-                    <button className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+                    <Link 
+                      href={`/projects/${project.id}`}
+                      className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                    >
                       Details
                       <ArrowRight className="w-3 h-3" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
