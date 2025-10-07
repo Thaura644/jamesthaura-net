@@ -2,6 +2,7 @@ export const personalInfo = {
   name: 'James Thaura Mweni',
   title: 'Software Engineer',
   tagline: 'I build stuff.',
+  coffeeUrl: 'https://buymeacoffee.com/thaura',
   location: 'Kenya | Remote Global',
   availability: 'Available for new opportunities',
   email: 'jamesmweni52@gmail.com',
