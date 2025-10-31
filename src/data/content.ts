@@ -9,7 +9,7 @@ export const personalInfo = {
   phone: '+254111403346',
   dateOfBirth: '18/06/2002',
   nationality: 'Kenyan',
-  resumeUrl: 'https://drive.google.com/file/d/1RVnSLFn0Huk1SxIgp0QgAmLNFh37B-po/view?usp=sharing'
+  resumeUrl: 'https://drive.google.com/file/d/1CCIcZRBBibm2mGzXZtvuaV9ujlDLRpfb/view?usp=sharing'
 }
 
 export const bio = {
