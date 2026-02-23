@@ -7,10 +7,9 @@ import { useTheme } from 'next-themes'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { navigation } from '@/data/navigation'
-import { personalInfo } from '@/data/content'
 import { cn } from '@/lib/utils'
 
-export function Header() {
+export function Header({ personalInfo }: { personalInfo: any }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const pathname = usePathname()

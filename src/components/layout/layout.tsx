@@ -10,9 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 interface LayoutProps {
   children: React.ReactNode
+  personalInfo: any
+  ctaBannerData?: any
 }
 
-export function Layout({ children }: LayoutProps) {
+export function Layout({ children, personalInfo, ctaBannerData }: LayoutProps) {
   return (
     <ThemeProvider
       attribute="class"
@@ -21,12 +23,12 @@ export function Layout({ children }: LayoutProps) {
       disableTransitionOnChange
     >
       <div className={`min-h-screen bg-background font-sans antialiased ${inter.className}`}>
-        <CTABanner />
-        <Header />
+        <CTABanner data={ctaBannerData} />
+        <Header personalInfo={personalInfo} />
         <main className="flex-1">
           {children}
         </main>
-        <Footer />
+        <Footer personalInfo={personalInfo} />
       </div>
     </ThemeProvider>
   )

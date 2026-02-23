@@ -40,7 +40,7 @@ export default function SkillsClient({ initialSkills }: { initialSkills: any }) 
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {Object.entries(initialSkills).map(([category, categoryData]: [string, any], index) => {
-              const Icon = iconMap[categoryData.icon as keyof typeof iconMap] || Code
+              const Icon = (iconMap as any)[categoryData.icon] || Code
 
               return (
                 <motion.div

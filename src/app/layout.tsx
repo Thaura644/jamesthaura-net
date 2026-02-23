@@ -4,6 +4,8 @@ import { Layout } from '@/components/layout/layout'
 import "./globals.css";
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
+import { getContent, getSeoMetadata } from '@/lib/payload';
+import { personalInfo as staticPersonalInfo } from '@/data/content';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,22 +17,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "James Thaura - Software Engineer | Python, Flutter, Next.js Developer",
-  description: "James Thaura is a Software Engineer building innovative solutions with Python, Flutter, and Next.js. Specialized in full-stack development, mobile apps, and SaaS platforms. Open to global opportunities.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const seo: any = await getSeoMetadata();
+  if (seo?.home) {
+    return {
+      title: seo.home.title,
+      description: seo.home.description,
+      keywords: seo.home.keywords,
+    }
+  }
+  return {
+    title: "James Thaura - Software Engineer | Python, Flutter, Next.js Developer",
+    description: "James Thaura is a Software Engineer building innovative solutions with Python, Flutter, and Next.js. Specialized in full-stack development, mobile apps, and SaaS platforms. Open to global opportunities.",
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const content: any = await getContent();
+  const personalInfo = content?.personalInfo || staticPersonalInfo;
+  const ctaBannerData = content?.ctaBanner;
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Layout>{children}</Layout>
+        <Layout personalInfo={personalInfo} ctaBannerData={ctaBannerData}>{children}</Layout>
         
         {/* Cal.com Scripts */}
         <Script

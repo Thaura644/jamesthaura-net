@@ -4,10 +4,11 @@ import Link from 'next/link'
 import { X } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ctaBanner } from '@/data/navigation'
+import { ctaBanner as staticCtaBanner } from '@/data/navigation'
 
-export function CTABanner() {
+export function CTABanner({ data }: { data?: any }) {
   const [isVisible, setIsVisible] = useState(true)
+  const ctaBanner = data || staticCtaBanner
 
   if (!isVisible) return null
 

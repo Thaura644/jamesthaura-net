@@ -2,10 +2,9 @@
 
 import Link from 'next/link'
 import { socialLinks } from '@/data/navigation'
-import { personalInfo } from '@/data/content'
 import { SocialIcons } from '@/components/ui/social-icons'
 
-export function Footer() {
+export function Footer({ personalInfo }: { personalInfo: any }) {
   const currentYear = new Date().getFullYear()
 
   return (
