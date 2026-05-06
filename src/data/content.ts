@@ -1,10 +1,10 @@
 export const personalInfo = {
   name: 'James Thaura Mweni',
   title: 'Software Engineer',
-  tagline: 'I build stuff.',
+  tagline: 'I build production software across web, mobile, and AI-enabled systems.',
   coffeeUrl: 'https://buymeacoffee.com/thaura',
   location: 'Kenya | Remote Global',
-  availability: 'Available for new opportunities',
+  availability: 'Open to impactful remote and hybrid roles',
   email: 'jamesmweni52@gmail.com',
   phone: '+254111403346',
   dateOfBirth: '18/06/2002',
@@ -13,64 +13,55 @@ export const personalInfo = {
 }
 
 export const bio = {
-  short: `A Software Engineer passionate about building innovative solutions across sectors. 
-  I specialize in full-stack development with expertise in Python, Flutter, and Next.js, 
-  creating impactful applications from mobile apps to SaaS platforms.`,
+  short: `I design and ship full-stack products, internal systems, and automation tools.
+  My current focus is Python/FastAPI backends, Next.js apps, Flutter products, and practical AI integrations.`,
   
-  long: `I'm James Thaura, a Software Engineer with a passion for building innovative solutions 
-  that make a real difference. With a Computer Science background from Kabarak University in Kenya, 
-  I've evolved into a full-stack developer who thrives on turning complex problems into elegant, 
-  scalable solutions.
+  long: `I'm James Thaura, a software engineer focused on building reliable products that solve real business and user problems.
+  I work end-to-end: product thinking, architecture, implementation, and deployment.
 
-  My expertise spans the entire development stack - from mobile applications built with Flutter 
-  to robust backend systems using Python and FastAPI, and modern web applications with Next.js. 
-  I have extensive experience in DevOps, API integrations, and both monolithic and microservices 
-  architectures.
+  Over the last few years, I've built and maintained systems in fintech, civic tech, and operations-heavy domains.
+  That includes SaaS products, payment and messaging integrations, Odoo customizations, and internal automation flows.
+  I care about developer velocity, maintainability, and shipping software users can trust.
 
-  What sets me apart is my focus on building solutions that matter. Whether it's a civic engagement 
-  platform empowering citizens, a fintech app simplifying financial management, or a SaaS platform 
-  streamlining business operations, I believe technology should solve real problems and create value.
-
-  Currently open to global opportunities while maintaining strong expertise in the Kenyan and African 
-  market. I'm particularly interested in projects involving innovative technology stacks, complex 
-  integrations, and meaningful impact.`,
+  I hold a BSc in Computer Science from Kabarak University and I'm currently based in Kenya, collaborating with teams locally and globally.
+  I enjoy projects with clear impact, complex workflows, and room for thoughtful engineering decisions.`,
 
   values: [
-    'Innovation through simplicity',
-    'Code quality and maintainability', 
-    'User-centered design',
-    'Continuous learning and growth',
-    'Building for global scale'
+    'Pragmatic engineering over hype',
+    'Clean architecture and maintainable code',
+    'Fast iteration with quality guardrails',
+    'User and business outcomes first',
+    'Ownership from idea to production'
   ]
 }
 
 export const experience = [
   {
-    role: 'Founder and Software Engineer',
-    company: 'Kulture, Inc.',
-    period: 'September 2024 - Present',
-    location: 'Nairobi, Kenya',
-    type: 'Part-time',
-    description: `At self-employed, yet not earning, i build these personal projects to solve problems i encounter in my daily life. as well as what the pain points that i can reach`,
-    achievements: [
-      'Built and yet to deploy Barazer - A civic tech platform for citizen engagement and government transparency',
-      'built and deployed Budgy(BudgetWise) - A personal finance management app with budgeting and expense tracking',
-      'Built and deployed PayDay - A production ready mvp for sending invoices via whatsapp and email with payment links, and integrated your workflow with payment gateways of your choice',
-      'Built and deployed Collaborated with cross-functional teams to deliver scalable solutions'
-    ]
-  },
-  {
-    role: 'Software Engineer (Technical Consultant & Functional Assistant)',
+    role: 'Software Engineer',
     company: 'Metro ICT Limited',
     period: 'February 2025 - Present',
     location: 'Nairobi, Kenya',
     type: 'Full-time',
-    description: `Developing and maintaining applications using modern technologies including React Native, Flutter, and FastAPI for backend services. Re-architecting Odoo modules for enhanced business interactivity.`,
+    description: `Build and maintain production applications and integrations across business platforms, mobile products, and backend services.`,
     achievements: [
-      'Developed and maintained apps in React Native, Flutter and FastAPI for backend services',
-      'Re-architected Odoo modules for enhanced business interactivity',
-      'Improved system performance and user experience across multiple platforms',
-      'Collaborated with cross-functional teams to deliver scalable solutions'
+      'Developed and maintained backend and integration-heavy systems using Python and FastAPI',
+      'Implemented and improved Odoo modules for operations, reporting, and workflow automation',
+      'Built internal tooling to reduce manual reconciliation and improve data quality',
+      'Worked across product, ops, and business teams to deliver iterative production releases'
+    ]
+  },
+  {
+    role: 'Founder & Product Engineer',
+    company: 'Independent Projects',
+    period: 'September 2024 - Present',
+    location: 'Nairobi, Kenya',
+    type: 'Part-time',
+    description: `Design, build, and operate product experiments and SaaS-style tools from concept to deployment.`,
+    achievements: [
+      'Built PayDay: invoice and payment automation workflow with WhatsApp and payment integrations',
+      'Built and iterated Barazer: civic participation platform with mobile and web clients',
+      'Built BudgetWise and other product prototypes focused on fintech and operations use cases',
+      'Owned architecture, coding, deployment, monitoring, and feedback loops end-to-end'
     ]
   },
   {
@@ -84,7 +75,7 @@ export const experience = [
       'Assisted in developing a helpdesk web application',
       'Tackled software and technical support challenges',
       'Gained experience in enterprise-level software development',
-      'Collaborated with senior developers and technical teams'
+      'Collaborated with senior developers and technical teams in government-adjacent delivery'
     ]
   },
   {
@@ -119,13 +110,13 @@ export const skills = {
   'Backend Development': {
     icon: 'server',
     skills: [
-      { name: 'Python', level: 95, experience: '4+ years' },
-      { name: 'FastAPI', level: 90, experience: '3+ years' },
-      { name: 'Django', level: 85, experience: '3+ years' },
+      { name: 'Python', level: 94, experience: '4+ years' },
+      { name: 'FastAPI', level: 91, experience: '3+ years' },
       { name: 'PostgreSQL', level: 88, experience: '3+ years' },
-      { name: 'SQLAlchemy', level: 85, experience: '2+ years' },
-      { name: 'Odoo Development', level: 85, experience: '2+ years' },
-      { name: 'RESTful APIs', level: 92, experience: '4+ years' }
+      { name: 'SQLAlchemy', level: 86, experience: '2+ years' },
+      { name: 'Odoo Development', level: 89, experience: '2+ years' },
+      { name: 'Redis', level: 78, experience: '1+ year' },
+      { name: 'REST APIs', level: 92, experience: '4+ years' }
     ]
   },
   'Frontend Development': {
@@ -133,9 +124,10 @@ export const skills = {
     skills: [
       { name: 'Next.js', level: 90, experience: '2+ years' },
       { name: 'React', level: 88, experience: '3+ years' },
-      { name: 'TypeScript', level: 85, experience: '2+ years' },
+      { name: 'TypeScript', level: 87, experience: '2+ years' },
       { name: 'JavaScript', level: 90, experience: '4+ years' },
       { name: 'Tailwind CSS', level: 92, experience: '2+ years' },
+      { name: 'Payload CMS', level: 78, experience: '1+ year' },
       { name: 'HTML/CSS', level: 95, experience: '4+ years' }
     ]
   },
@@ -144,7 +136,7 @@ export const skills = {
     skills: [
       { name: 'Flutter', level: 92, experience: '3+ years' },
       { name: 'Dart', level: 90, experience: '3+ years' },
-      { name: 'React Native', level: 75, experience: '1+ year' },
+      { name: 'React Native', level: 77, experience: '1+ year' },
       { name: 'Mobile UI/UX', level: 85, experience: '3+ years' },
       { name: 'State Management', level: 88, experience: '3+ years' }
     ]
@@ -152,36 +144,36 @@ export const skills = {
   'DevOps & Infrastructure': {
     icon: 'cloud',
     skills: [
-      { name: 'Docker', level: 85, experience: '2+ years' },
-      { name: 'Kubernetes', level: 75, experience: '1+ year' },
+      { name: 'Docker', level: 86, experience: '2+ years' },
+      { name: 'GitHub Actions', level: 84, experience: '2+ years' },
       { name: 'CI/CD', level: 82, experience: '2+ years' },
-      { name: 'GitHub Actions', level: 82, experience: '2+ years' },
+      { name: 'Linux/SSH', level: 90, experience: '4+ years' },
       { name: 'VPS Management', level: 88, experience: '3+ years' },
-      { name: 'SSH/Linux', level: 90, experience: '4+ years' },
       { name: 'Vercel/Netlify', level: 85, experience: '2+ years' },
-      { name: 'Database Admin', level: 80, experience: '2+ years' }
+      { name: 'Docker Compose', level: 84, experience: '2+ years' }
     ]
   },
   'APIs & Integrations': {
     icon: 'link',
     skills: [
-      { name: 'Stripe Integration', level: 90, experience: '2+ years' },
       { name: 'M-Pesa Daraja API', level: 92, experience: '2+ years' },
+      { name: 'Stripe Integration', level: 89, experience: '2+ years' },
       { name: 'WhatsApp Business API', level: 88, experience: '1+ year' },
       { name: 'Supabase', level: 85, experience: '1+ year' },
-      { name: 'PayPal Integration', level: 80, experience: '1+ year' },
-      { name: 'AI/ML APIs', level: 75, experience: '1+ year' }
+      { name: 'Webhook Design', level: 88, experience: '2+ years' },
+      { name: 'OpenAI API', level: 80, experience: '1+ year' },
+      { name: 'Payment Gateway Integration', level: 89, experience: '2+ years' }
     ]
   },
   'Architecture & Design': {
     icon: 'layout',
     skills: [
-      { name: 'System Architecture', level: 85, experience: '3+ years' },
+      { name: 'System Architecture', level: 87, experience: '3+ years' },
       { name: 'Microservices', level: 80, experience: '2+ years' },
-      { name: 'Monolithic Apps', level: 90, experience: '3+ years' },
+      { name: 'Modular Monoliths', level: 90, experience: '3+ years' },
       { name: 'Database Design', level: 85, experience: '3+ years' },
       { name: 'API Design', level: 88, experience: '3+ years' },
-      { name: 'Security Patterns', level: 80, experience: '2+ years' }
+      { name: 'Security Patterns', level: 82, experience: '2+ years' }
     ]
   }
 }

@@ -119,7 +119,7 @@ export default function SkillsClient({ initialSkills }: { initialSkills: any }) 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
               'Python', 'FastAPI', 'Flutter', 'Next.js', 'React', 'TypeScript',
-              'PostgreSQL', 'Docker', 'Kubernetes', 'Odoo Development', 'React Native', 'Tailwind CSS'
+              'PostgreSQL', 'Docker', 'Odoo Development', 'M-Pesa API', 'OpenAI API', 'Tailwind CSS'
             ].map((tech, index) => (
               <motion.div
                 key={tech}
