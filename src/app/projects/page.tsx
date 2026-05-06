@@ -1,17 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ArrowRight, ExternalLink, Github, Filter, Calendar, Lock } from 'lucide-react'
 import { projects } from '@/data/projects'
 import { projectCategories } from '@/data/navigation'
-import { PaymentBlock } from '@/components/ui/payment-block'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
-  const [paymentBlock, setPaymentBlock] = useState<{ show: boolean; projectTitle: string; projectId: string }>({ show: false, projectTitle: '', projectId: '' })
   
   const filteredProjects = activeFilter === 'all' 
     ? projects 
@@ -20,19 +17,6 @@ export default function Projects() {
   const handleScheduleDemo = () => {
     // This will be handled by the Cal.com floating button
     console.log('Schedule demo clicked')
-  }
-
-  const handleCodeClick = (project: typeof projects[0]) => {
-    // NASA APOD app is free, others require payment
-    if (project.id === 'nasa-apod-app') {
-      window.open(project.links.code, '_blank')
-    } else {
-      setPaymentBlock({ show: true, projectTitle: project.title, projectId: project.id })
-    }
-  }
-
-  const closePaymentBlock = () => {
-    setPaymentBlock({ show: false, projectTitle: '', projectId: '' })
   }
 
   return (
@@ -116,17 +100,9 @@ export default function Projects() {
                 viewport={{ once: true }}
                 className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:border-primary/50"
               >
-                {/* Project Image */}
-                <div className="h-48 relative bg-muted">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                  
-                  {/* Status Badge */}
-                  <div className="absolute top-4 right-4">
+                {/* Project Content */}
+                <div className="p-6 space-y-4">
+                  <div className="flex items-center justify-between">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                       project.status === 'live' 
                         ? 'bg-green-100 text-green-800' 
@@ -136,20 +112,12 @@ export default function Projects() {
                     }`}>
                       {project.status}
                     </span>
-                  </div>
-
-                  {/* Featured Badge */}
-                  {project.featured && (
-                    <div className="absolute top-4 left-4">
+                    {project.featured && (
                       <span className="bg-primary text-white dark:text-black px-3 py-1 rounded-full text-xs font-medium">
                         Featured
                       </span>
-                    </div>
-                  )}
-                </div>
-
-                {/* Project Content */}
-                <div className="p-6 space-y-4">
+                    )}
+                  </div>
                   <div className="space-y-2">
                     <h3 className="font-bold text-xl">{project.title}</h3>
                     <p className="text-primary font-medium">{project.subtitle}</p>
@@ -197,17 +165,21 @@ export default function Projects() {
                         </Link>
                       )}
                       {project.links.code && (
-                        <button
-                          onClick={() => handleCodeClick(project)}
+                        <Link
+                          href={project.links.code}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
                         >
-                          {project.id === 'nasa-apod-app' ? (
-                            <Github className="w-3 h-3" />
-                          ) : (
-                            <Lock className="w-3 h-3" />
-                          )}
-                          {project.id === 'nasa-apod-app' ? 'Code' : 'Premium'}
-                        </button>
+                          <Github className="w-3 h-3" />
+                          Code
+                        </Link>
+                      )}
+                      {!project.links.code && (
+                        <span className="inline-flex items-center gap-1 text-sm text-muted-foreground">
+                          <Lock className="w-3 h-3" />
+                          Private Repo
+                        </span>
                       )}
                       {project.links.web && (
                         <Link
@@ -298,16 +270,6 @@ export default function Projects() {
         </div>
       </section>
       
-      {/* Payment Block Modal */}
-      <AnimatePresence>
-        {paymentBlock.show && (
-          <PaymentBlock
-            projectTitle={paymentBlock.projectTitle}
-            projectId={paymentBlock.projectId}
-            onClose={closePaymentBlock}
-          />
-        )}
-      </AnimatePresence>
     </div>
   )
 }

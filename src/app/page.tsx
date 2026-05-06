@@ -125,14 +125,6 @@ export default function Home() {
               >
                 <Link href={`/projects/${project.id}`} className="block">
                   <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <div className="h-48 relative bg-muted">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                    </div>
                     <div className="p-6 space-y-3">
                       <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
                         {project.title}

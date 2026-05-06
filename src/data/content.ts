@@ -1,10 +1,10 @@
 export const personalInfo = {
   name: 'James Thaura Mweni',
   title: 'Software Engineer',
-  tagline: 'I build production software across web, mobile, and AI-enabled systems.',
+  tagline: 'I build and ship production systems across backend, web, mobile, and AI workflows.',
   coffeeUrl: 'https://buymeacoffee.com/thaura',
   location: 'Kenya | Remote Global',
-  availability: 'Open to impactful remote and hybrid roles',
+  availability: 'Open to remote software engineering and product engineering roles',
   email: 'jamesmweni52@gmail.com',
   phone: '+254111403346',
   dateOfBirth: '18/06/2002',
@@ -13,25 +13,24 @@ export const personalInfo = {
 }
 
 export const bio = {
-  short: `I design and ship full-stack products, internal systems, and automation tools.
-  My current focus is Python/FastAPI backends, Next.js apps, Flutter products, and practical AI integrations.`,
+  short: `I design and ship software used in real operations, not just demos.
+  My current focus is backend-heavy products with Python/FastAPI, TypeScript/Next.js interfaces, and automation or AI integrations where they add clear value.`,
   
-  long: `I'm James Thaura, a software engineer focused on building reliable products that solve real business and user problems.
-  I work end-to-end: product thinking, architecture, implementation, and deployment.
+  long: `I'm James Thaura, a software engineer focused on delivering dependable software for operational teams, product teams, and end users.
+  I work across the full lifecycle: discovery, architecture, implementation, deployment, and iterative improvements after release.
 
-  Over the last few years, I've built and maintained systems in fintech, civic tech, and operations-heavy domains.
-  That includes SaaS products, payment and messaging integrations, Odoo customizations, and internal automation flows.
-  I care about developer velocity, maintainability, and shipping software users can trust.
+  Recently, my work has centered on Python and TypeScript systems, API integrations, payment and reconciliation workflows, and product delivery across web and mobile.
+  I prioritize maintainability, clear system boundaries, and shipping outcomes that teams can measure.
 
-  I hold a BSc in Computer Science from Kabarak University and I'm currently based in Kenya, collaborating with teams locally and globally.
-  I enjoy projects with clear impact, complex workflows, and room for thoughtful engineering decisions.`,
+  I hold a BSc in Computer Science from Kabarak University and I work from Kenya with distributed teams and clients.
+  I enjoy complex workflow problems, integration-heavy environments, and products with clear business impact.`,
 
   values: [
-    'Pragmatic engineering over hype',
-    'Clean architecture and maintainable code',
-    'Fast iteration with quality guardrails',
-    'User and business outcomes first',
-    'Ownership from idea to production'
+    'Pragmatic execution over unnecessary complexity',
+    'Maintainable systems with explicit boundaries',
+    'Fast delivery with quality guardrails',
+    'Business outcomes and user trust first',
+    'Ownership from architecture to production support'
   ]
 }
 
@@ -42,12 +41,12 @@ export const experience = [
     period: 'February 2025 - Present',
     location: 'Nairobi, Kenya',
     type: 'Full-time',
-    description: `Build and maintain production applications and integrations across business platforms, mobile products, and backend services.`,
+    description: `Build and maintain production systems across backend services, integrations, and internal business tooling.`,
     achievements: [
-      'Developed and maintained backend and integration-heavy systems using Python and FastAPI',
-      'Implemented and improved Odoo modules for operations, reporting, and workflow automation',
-      'Built internal tooling to reduce manual reconciliation and improve data quality',
-      'Worked across product, ops, and business teams to deliver iterative production releases'
+      'Delivered backend and integration-heavy services using Python and FastAPI',
+      'Built and maintained Odoo custom modules for operations, reporting, and process automation',
+      'Implemented reconciliation tooling that reduced manual effort and improved auditability',
+      'Worked with product and operations stakeholders to ship incremental production releases'
     ]
   },
   {
@@ -56,12 +55,12 @@ export const experience = [
     period: 'September 2024 - Present',
     location: 'Nairobi, Kenya',
     type: 'Part-time',
-    description: `Design, build, and operate product experiments and SaaS-style tools from concept to deployment.`,
+    description: `Design, build, and operate product experiments and client systems from concept through production support.`,
     achievements: [
-      'Built PayDay: invoice and payment automation workflow with WhatsApp and payment integrations',
-      'Built and iterated Barazer: civic participation platform with mobile and web clients',
-      'Built BudgetWise and other product prototypes focused on fintech and operations use cases',
-      'Owned architecture, coding, deployment, monitoring, and feedback loops end-to-end'
+      'Built and iterated products in fintech, civic, and operations-focused domains',
+      'Shipped full-stack systems with deployment pipelines, observability, and maintenance workflows',
+      'Executed API and messaging integrations including payment and notification flows',
+      'Owned architecture, coding, deployment, and post-launch iteration end-to-end'
     ]
   },
   {
@@ -112,9 +111,10 @@ export const skills = {
     skills: [
       { name: 'Python', level: 94, experience: '4+ years' },
       { name: 'FastAPI', level: 91, experience: '3+ years' },
-      { name: 'PostgreSQL', level: 88, experience: '3+ years' },
-      { name: 'SQLAlchemy', level: 86, experience: '2+ years' },
+      { name: 'PostgreSQL', level: 90, experience: '3+ years' },
+      { name: 'SQLAlchemy', level: 87, experience: '2+ years' },
       { name: 'Odoo Development', level: 89, experience: '2+ years' },
+      { name: 'Go', level: 74, experience: '1+ year' },
       { name: 'Redis', level: 78, experience: '1+ year' },
       { name: 'REST APIs', level: 92, experience: '4+ years' }
     ]
@@ -124,10 +124,10 @@ export const skills = {
     skills: [
       { name: 'Next.js', level: 90, experience: '2+ years' },
       { name: 'React', level: 88, experience: '3+ years' },
-      { name: 'TypeScript', level: 87, experience: '2+ years' },
+      { name: 'TypeScript', level: 89, experience: '2+ years' },
       { name: 'JavaScript', level: 90, experience: '4+ years' },
       { name: 'Tailwind CSS', level: 92, experience: '2+ years' },
-      { name: 'Payload CMS', level: 78, experience: '1+ year' },
+      { name: 'Payload CMS', level: 80, experience: '1+ year' },
       { name: 'HTML/CSS', level: 95, experience: '4+ years' }
     ]
   },
@@ -136,7 +136,7 @@ export const skills = {
     skills: [
       { name: 'Flutter', level: 92, experience: '3+ years' },
       { name: 'Dart', level: 90, experience: '3+ years' },
-      { name: 'React Native', level: 77, experience: '1+ year' },
+      { name: 'React Native', level: 79, experience: '1+ year' },
       { name: 'Mobile UI/UX', level: 85, experience: '3+ years' },
       { name: 'State Management', level: 88, experience: '3+ years' }
     ]
@@ -145,7 +145,7 @@ export const skills = {
     icon: 'cloud',
     skills: [
       { name: 'Docker', level: 86, experience: '2+ years' },
-      { name: 'GitHub Actions', level: 84, experience: '2+ years' },
+      { name: 'GitHub Actions', level: 86, experience: '2+ years' },
       { name: 'CI/CD', level: 82, experience: '2+ years' },
       { name: 'Linux/SSH', level: 90, experience: '4+ years' },
       { name: 'VPS Management', level: 88, experience: '3+ years' },
@@ -157,11 +157,11 @@ export const skills = {
     icon: 'link',
     skills: [
       { name: 'M-Pesa Daraja API', level: 92, experience: '2+ years' },
-      { name: 'Stripe Integration', level: 89, experience: '2+ years' },
+      { name: 'Stripe Integration', level: 86, experience: '2+ years' },
       { name: 'WhatsApp Business API', level: 88, experience: '1+ year' },
       { name: 'Supabase', level: 85, experience: '1+ year' },
       { name: 'Webhook Design', level: 88, experience: '2+ years' },
-      { name: 'OpenAI API', level: 80, experience: '1+ year' },
+      { name: 'OpenAI API', level: 83, experience: '1+ year' },
       { name: 'Payment Gateway Integration', level: 89, experience: '2+ years' }
     ]
   },

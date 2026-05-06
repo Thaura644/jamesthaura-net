@@ -4,7 +4,7 @@ export interface Project {
   subtitle: string
   description: string
   longDescription: string
-  image: string
+  image?: string
   gallery?: string[]
   tags: string[]
   category: string[]
@@ -34,12 +34,11 @@ export const projects: Project[] = [
   {
     id: 'rntpuls',
     title: 'RntPuls',
-    subtitle: 'Rent Collection Platform',
+    subtitle: 'Property Rent Operations Platform',
     description:
       'Production-oriented rent collection platform with Go backend, React frontend, PostgreSQL, Docker Compose, and GitHub Actions CI.',
     longDescription:
       'Based on the repository README, RntPuls includes authentication, tenant and payment workflows, CSV/XLSX import-export, monthly Excel reporting, and optional M-Pesa verification and Twilio SMS reminders. It is a full-stack implementation with API + web + database services.',
-    image: '/projects/nasa-apod-hero.png',
     tags: ['Full-Stack', 'Go', 'Property Ops'],
     category: ['full-stack', 'backend', 'saas'],
     tech: ['Go', 'React', 'PostgreSQL', 'Docker Compose', 'GitHub Actions', 'M-Pesa Daraja', 'Twilio'],
@@ -75,7 +74,6 @@ export const projects: Project[] = [
       'Next.js + Tauri + Docker project for orchestrating multi-model AI workflows with provider integrations and real-time telemetry.',
     longDescription:
       'Per the README, LLM Conduit supports multi-provider API integration (including OpenAI, Anthropic, Google, and xAI), Brave Search integration, autonomous governance flows, persistent memory, and both native desktop (Tauri) and containerized run modes.',
-    image: '/projects/careerleap-hero.png',
     tags: ['AI', 'Next.js', 'Tauri'],
     category: ['full-stack', 'ai-ml', 'saas'],
     tech: ['Next.js', 'TypeScript', 'Tauri (Rust)', 'Docker', 'SQLite'],
@@ -110,7 +108,6 @@ export const projects: Project[] = [
       'School bus management app with route handling, real-time tracking, attendance, and admin tooling via Odoo integration.',
     longDescription:
       'The repository README documents driver and parent flows, JWT auth, real-time tracking, route visualization, notification support, and backend services in FastAPI with PostgreSQL and Odoo-based administration.',
-    image: '/projects/budgetwise-hero.jpeg',
     tags: ['Mobility', 'Tracking', 'EdTech Ops'],
     category: ['mobile', 'full-stack'],
     tech: ['React Native', 'FastAPI', 'PostgreSQL', 'Odoo', 'Firebase Cloud Messaging', 'WebSockets'],
@@ -124,7 +121,7 @@ export const projects: Project[] = [
     impact: [
       { metric: 'Repository visibility', value: 'Public' },
       { metric: 'Primary language', value: 'JavaScript' },
-      { metric: 'Last push', value: 'August 5, 2025' }
+      { metric: 'Last push', value: 'April 3, 2026' }
     ],
     links: {
       code: 'https://github.com/Thaura644/kenya_school_bus_app'
@@ -145,7 +142,6 @@ export const projects: Project[] = [
       'Private Python repository currently under active development.',
     longDescription:
       'Public metadata confirms this is a private Python codebase. Detailed implementation notes are intentionally omitted in the portfolio because the repository is private.',
-    image: '/projects/payday-hero.png',
     tags: ['Private', 'Python'],
     category: ['backend', 'fintech'],
     tech: ['Python'],
@@ -175,7 +171,6 @@ export const projects: Project[] = [
       'Private TypeScript repository with active commits and a configured homepage.',
     longDescription:
       'Public metadata confirms this repository is private, TypeScript-based, and actively pushed. The configured homepage is paydaymoney.net. Product internals are not exposed in the portfolio for accuracy and confidentiality.',
-    image: '/projects/barazer-hero.png',
     tags: ['Private', 'TypeScript'],
     category: ['full-stack', 'saas'],
     tech: ['TypeScript'],
@@ -198,6 +193,68 @@ export const projects: Project[] = [
     architecture: {
       type: 'monolithic',
       description: 'Private implementation details.'
+    }
+  },
+  {
+    id: 'metro-ict-paas',
+    title: 'Metro ICT PaaS',
+    subtitle: 'Private Platform Architecture Workspace',
+    description:
+      'Private TypeScript repository for platform architecture and internal environment setup, with active updates and published preview.',
+    longDescription:
+      'Public metadata shows this project as a private TypeScript codebase with recent updates and a public demo URL. Detailed implementation specifics are intentionally withheld due to repository visibility.',
+    tags: ['Private', 'Architecture', 'TypeScript'],
+    category: ['full-stack', 'saas'],
+    tech: ['TypeScript', 'Next.js', 'Platform Architecture'],
+    features: [
+      'Private repository with active maintenance',
+      'Architecture-first implementation approach',
+      'Public preview deployment for validation'
+    ],
+    impact: [
+      { metric: 'Repository visibility', value: 'Private' },
+      { metric: 'Primary language', value: 'TypeScript' },
+      { metric: 'Last push', value: 'April 24, 2026' }
+    ],
+    links: {
+      web: 'https://v0-metro-ict-paa-s-architecture.vercel.app'
+    },
+    status: 'development',
+    featured: true,
+    year: '2026',
+    architecture: {
+      type: 'hybrid',
+      description: 'Private architecture and implementation with public deployment surface.'
+    }
+  },
+  {
+    id: 'barazer',
+    title: 'Barazer',
+    subtitle: 'Private Civic Participation App',
+    description:
+      'Private Dart-based civic product under continued maintenance, focused on participation and community workflows.',
+    longDescription:
+      'Repository metadata confirms Barazer as a private Dart project with sustained updates. Details on flows, integrations, and release strategy are omitted publicly because of project privacy.',
+    tags: ['Private', 'Mobile', 'Dart'],
+    category: ['mobile', 'civic-tech'],
+    tech: ['Dart', 'Flutter'],
+    features: [
+      'Private mobile codebase',
+      'Civic-focused product direction',
+      'Actively maintained in 2026'
+    ],
+    impact: [
+      { metric: 'Repository visibility', value: 'Private' },
+      { metric: 'Primary language', value: 'Dart' },
+      { metric: 'Last push', value: 'April 16, 2026' }
+    ],
+    links: {},
+    status: 'development',
+    featured: false,
+    year: '2026',
+    architecture: {
+      type: 'monolithic',
+      description: 'Private mobile implementation details.'
     }
   }
 ]

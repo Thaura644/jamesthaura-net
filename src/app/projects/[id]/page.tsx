@@ -3,7 +3,6 @@
 import { use } from 'react'
 import { notFound } from 'next/navigation'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, ExternalLink, Github, Calendar, MessageCircle, ArrowRight, CheckCircle, Target, Zap } from 'lucide-react'
 import { projects } from '@/data/projects'
@@ -140,22 +139,27 @@ export default function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </motion.div>
             
-            {/* Project Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex justify-center lg:justify-end"
             >
-              <div className="relative w-full max-w-md lg:max-w-lg">
-                <div className="aspect-[4/3] relative rounded-lg overflow-hidden border border-border bg-card">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                    priority
-                  />
+              <div className="w-full max-w-md lg:max-w-lg rounded-lg border border-border bg-card p-8">
+                <h3 className="text-xl font-semibold mb-4">Repository Snapshot</h3>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <p>
+                    <span className="font-medium text-foreground">Visibility:</span>{' '}
+                    {project.impact?.find((item) => item.metric === 'Repository visibility')?.value || 'Not specified'}
+                  </p>
+                  <p>
+                    <span className="font-medium text-foreground">Primary language:</span>{' '}
+                    {project.impact?.find((item) => item.metric === 'Primary language')?.value || 'Not specified'}
+                  </p>
+                  <p>
+                    <span className="font-medium text-foreground">Last push:</span>{' '}
+                    {project.impact?.find((item) => item.metric === 'Last push')?.value || 'Not specified'}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -356,4 +360,3 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     </div>
   )
 }
-
